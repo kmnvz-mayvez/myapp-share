@@ -19,7 +19,7 @@
   "author": "may",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/kmnvz-mayvez/myapp-share"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
