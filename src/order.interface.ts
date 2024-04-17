@@ -47,10 +47,10 @@ export interface IOrderReview {
 export interface IOrderMessage {
   sellerId?: string;
   buyerId?: string;
-  ongoingJobs?: number;
-  completedJobs?: number;
+  ongoing?: number;
+  completed?: number;
   totalEarnings?: number;
-  purchasedGigs?: string;
+  purchasedFishs?: string;
   recentDelivery?: string;
   type?: string;
   receiverEmail?: string;
