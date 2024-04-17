@@ -66,11 +66,11 @@ export interface IFishContext {
 
 export interface IFishProps {
   type?: string;
-  gig?: ISellerFish;
+  fish?: ISellerFish;
 }
 
 export interface IFishCardItems {
-  gig: ISellerFish;
+  fish: ISellerFish;
   linkTarget: boolean;
   showEditIcon: boolean;
 }
@@ -92,7 +92,7 @@ export interface IFishInfo {
 }
 
 export interface IFishTopProps {
-  gigs: ISellerFish[];
+  fishs: ISellerFish[];
   title?: string;
   subTitle?: string;
   category?: string;
