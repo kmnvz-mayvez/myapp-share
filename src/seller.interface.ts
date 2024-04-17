@@ -35,7 +35,6 @@ export interface IProduction {
   endDate: string;
   totalProduction: string;
   description: string;
-  currentlyWorkingHere: boolean | undefined;
 }
 
 export interface IStock {
