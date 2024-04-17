@@ -56,7 +56,7 @@ export interface ISellerDocument extends Record<string, SellerType> {
   ratingsCount?: number;
   ratingSum?: number;
   ratingCategories?: IRatingCategories;
-  Pond: IPond[];
+  pond: IPond[];
   responseTime: number;
   recentDelivery?: Date | string;
   production: IProduction[];
