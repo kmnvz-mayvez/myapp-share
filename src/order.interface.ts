@@ -1,7 +1,7 @@
 
 export interface IOffer {
   [key: string]: string | number | boolean | undefined;
-  gigTitle: string;
+  fishTitle: string;
   price: number;
   description: string;
   deliveryInDays: number;
