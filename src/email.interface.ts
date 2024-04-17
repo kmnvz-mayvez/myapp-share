@@ -1,7 +1,6 @@
 export interface IEmailLocals {
   sender?: string;
   appLink: string;
-  appIcon: string;
   offerLink?: string;
   amount?: string;
   buyerUsername?: string;
