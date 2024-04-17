@@ -25,17 +25,17 @@ export {
   IChatMessageProps,
 } from './chat.interface';
 export {
-  GigType,
-  ICreateGig,
-  ISellerGig,
-  IGigContext,
-  IGigsProps,
-  IGigCardItems,
+  FishType,
+  ICreateFish,
+  ISellerFish,
+  IFishContext,
+  IFishProps,
+  IFishCardItems,
   ISelectedBudget,
-  IGigViewReviewsProps,
-  IGigInfo,
-  IGigTopProps,
-} from './gig.interface';
+  IFishViewReviewsProps,
+  IFishInfo,
+  IFishTopProps,
+} from './fish.interface';
 export {
   IOrderNotifcation,
   IOffer,
@@ -63,10 +63,9 @@ export {
 } from './search.interface';
 export {
   SellerType,
-  ILanguage,
-  IExperience,
-  IEducation,
-  ICertificate,
+  IPond,
+  IProduction,
+  IStock,
   ISellerDocument,
 } from './seller.interface';
 export { IEmailLocals } from './email.interface';

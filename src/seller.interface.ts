@@ -1,60 +1,47 @@
 import { ObjectId } from "mongoose";
 import { IRatingCategories } from "./review.interface";
 
-// By extending ISellerDocument with the Record<string, any> you allow an object to contain other
+// By extending with the Record<string, any> 
 // string keys with any values along with those defined in the interface.
-// The nice part is that you still have the autocompletion for the defined properties
+
 export type SellerType =
   | string
   | string[]
   | number
   | IRatingCategories
   | Date
-  | IExperience
-  | IExperience[]
-  | IEducation
-  | IEducation[]
-  | ICertificate
-  | ICertificate[]
-  | ILanguage
-  | ILanguage[]
+  | IPond
+  | IPond[]
+  | IProduction
+  | IProduction[]
+  | IStock
+  | IStock[]
   | unknown
   | undefined;
 
-export interface ILanguage {
+export interface IPond {
   [key: string]: string | number | undefined;
   _id?: string;
-  language: string;
-  level: string;
+  namePond: string;
+  typePond: string;
+  sizePond: string;
+  location: string;
 }
 
-export interface IExperience {
+export interface IProduction {
   [key: string]: string | number | boolean | undefined;
   _id?: string;
-  company: string;
-  title: string;
   startDate: string;
   endDate: string;
+  totalProduction: string;
   description: string;
   currentlyWorkingHere: boolean | undefined;
 }
 
-export interface IEducation {
+export interface IStock {
   [key: string]: string | number | undefined;
   _id?: string;
-  country: string;
-  university: string;
-  title: string;
-  major: string;
-  year: string;
-}
-
-export interface ICertificate {
-  [key: string]: string | number | undefined;
-  _id?: string;
-  name: string;
-  from: string;
-  year: number | string;
+  quantity: string;
 }
 
 export interface ISellerDocument extends Record<string, SellerType> {
@@ -65,24 +52,19 @@ export interface ISellerDocument extends Record<string, SellerType> {
   email?: string;
   profilePicture?: string;
   description: string;
-  country: string;
-  oneliner: string;
-  skills: string[];
+  address: string;
   ratingsCount?: number;
   ratingSum?: number;
   ratingCategories?: IRatingCategories;
-  languages: ILanguage[];
+  Pond: IPond[];
   responseTime: number;
   recentDelivery?: Date | string;
-  experience: IExperience[];
-  education: IEducation[];
-  socialLinks: string[];
-  certificates: ICertificate[];
-  ongoingJobs?: number;
-  completedJobs?: number;
-  cancelledJobs?: number;
+  production: IProduction[];
+  stock: IStock[];
+  ongoing?: number;
+  completed?: number;
+  cancelled?: number;
   totalEarnings?: number;
-  totalGigs?: number;
-  paypal?: string; // not needed
+  paypal?: string; // needed
   createdAt?: Date | string;
 }

@@ -1,5 +1,5 @@
 export interface IReviewMessageDetails {
-  gigId?: string;
+  fishId?: string;
   reviewerId?: string;
   sellerId?: string;
   review?: string;
@@ -15,7 +15,7 @@ export interface IRatingTypes {
 
 export interface IReviewDocument {
   _id?: string;
-  gigId: string;
+  fishId: string;
   reviewerId: string;
   sellerId: string;
   review: string;
@@ -24,7 +24,6 @@ export interface IReviewDocument {
   orderId: string;
   createdAt: Date | string;
   reviewerUsername: string;
-  country: string;
   reviewType?: string;
 }
 

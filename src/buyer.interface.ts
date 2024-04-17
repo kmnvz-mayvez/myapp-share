@@ -5,9 +5,10 @@ export interface IBuyerDocument {
   username?: string;
   email?: string;
   profilePicture?: string;
-  country: string;
+  address: string;
+  phoneNumber: string;
   isSeller?: boolean;
-  purchasedGigs: string[];
+  purchasedFish: string[];
   createdAt?: Date | string;
   updatedAt?: Date | string;
 }

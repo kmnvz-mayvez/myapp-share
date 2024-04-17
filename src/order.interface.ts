@@ -9,7 +9,7 @@ export interface IOffer {
   newDeliveryDate: string;
   accepted: boolean;
   cancelled: boolean;
-  reason?: string; // this is the reason for extending the delivery date
+  reason?: string; // this is the reason for extending
 }
 
 export interface IExtendedDelivery {
@@ -81,15 +81,15 @@ export interface IOrderMessage {
 
 export interface IOrderDocument {
   offer: IOffer;
-  gigId: string;
+  fishId: string;
   sellerId: string;
   sellerUsername: string;
   sellerImage: string;
   sellerEmail: string;
-  gigCoverImage: string;
-  gigMainTitle: string;
-  gigBasicTitle: string;
-  gigBasicDescription: string;
+  fishCoverImage: string;
+  fishMainTitle: string;
+  fishBasicTitle: string;
+  fishBasicDescription: string;
   buyerId: string;
   buyerUsername: string;
   buyerEmail: string;
