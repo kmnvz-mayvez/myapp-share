@@ -17,7 +17,6 @@ export interface ICreateFish extends Record<string, FishType> {
   categories: string;
   description: string;
   subCategories: string[];
-  tags: string[];
   price: number;
   coverImage: string;
   expectedDelivery: string;
@@ -39,7 +38,6 @@ export interface ISellerFish {
   active?: boolean;
   categories: string;
   subCategories: string[];
-  tags: string[];
   ratingsCount?: number; // make sure to add this to elasticsearch as a double
   ratingSum?: number; // make sure to add this to elasticsearch as a double
   ratingCategories?: IRatingCategories;
@@ -58,7 +56,7 @@ export interface ISellerFish {
 }
 
 export interface IFishContext {
-  gig: ISellerFish;
+  fish: ISellerFish;
   seller: ISellerDocument;
   isSuccess?: boolean;
   isLoading?: boolean;
