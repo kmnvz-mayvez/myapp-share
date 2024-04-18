@@ -14,8 +14,6 @@ export type SellerType =
   | IPond[]
   | IProduction
   | IProduction[]
-  | IStock
-  | IStock[]
   | unknown
   | undefined;
 
@@ -37,12 +35,6 @@ export interface IProduction {
   description: string;
 }
 
-export interface IStock {
-  [key: string]: string | number | undefined;
-  _id?: string;
-  quantity: string;
-}
-
 export interface ISellerDocument extends Record<string, SellerType> {
   _id?: string | ObjectId;
   profilePublicId?: string;
@@ -59,7 +51,6 @@ export interface ISellerDocument extends Record<string, SellerType> {
   responseTime: number;
   recentDelivery?: Date | string;
   production: IProduction[];
-  stock: IStock[];
   ongoing?: number;
   completed?: number;
   cancelled?: number;
