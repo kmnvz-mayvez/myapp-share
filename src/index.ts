@@ -65,7 +65,6 @@ export {
   SellerType,
   IPond,
   IProduction,
-  IStock,
   ISellerDocument,
 } from './seller.interface';
 export { IEmailLocals } from './email.interface';
