@@ -29,6 +29,7 @@ export interface IPond {
 export interface IProduction {
   [key: string]: string | number | boolean | undefined;
   _id?: string;
+  title: string;
   startDate: string;
   endDate: string;
   totalProduction: string;
