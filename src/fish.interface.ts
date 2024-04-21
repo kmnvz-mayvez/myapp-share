@@ -19,6 +19,7 @@ export interface ICreateFish extends Record<string, FishType> {
   subCategories: string[];
   tags: string[];
   price: number;
+  stock: number;
   coverImage: string;
   expectedDelivery: string;
   basicTitle: string;
@@ -27,8 +28,6 @@ export interface ICreateFish extends Record<string, FishType> {
 
 export interface ISellerFish {
   _id?: string | ObjectId;
-  // this "id" property is used because elastcisearch does not accept a key with an underscore "_id"
-  // elasticsearch has _id as a reserved field name
   id?: string | ObjectId;
   sellerId?: string | ObjectId;
   title: string;
@@ -40,8 +39,10 @@ export interface ISellerFish {
   categories: string;
   subCategories: string[];
   tags: string[];
-  ratingsCount?: number; // make sure to add this to elasticsearch as a double
-  ratingSum?: number; // make sure to add this to elasticsearch as a double
+  pond: string[];
+  production: string[];
+  ratingsCount?: number;
+  ratingSum?: number;
   ratingCategories?: IRatingCategories;
   expectedDelivery: string;
   basicTitle: string;
@@ -50,10 +51,6 @@ export interface ISellerFish {
   coverImage: string;
   createdAt?: Date | string;
   sortId?: number;
-  // this is added here because we will use the json format of the document
-  // at some point instead of the Mongoose document
-  // the json object which will contain the virtual field "id" without the field "_id" will be added to elasticsearch
-  // because "_id" is a reserved field name in elasticsearch.
   toJSON?: () => unknown;
 }
 

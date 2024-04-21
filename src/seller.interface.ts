@@ -50,13 +50,13 @@ export interface ISellerDocument extends Record<string, SellerType> {
   ratingSum?: number;
   ratingCategories?: IRatingCategories;
   pond: IPond[];
+  production: IProduction[];
   responseTime: number;
   recentDelivery?: Date | string;
-  production: IProduction[];
   ongoing?: number;
   completed?: number;
   cancelled?: number;
   totalEarnings?: number;
-  paypal?: string; // needed
+  paypal?: string;
   createdAt?: Date | string;
 }
