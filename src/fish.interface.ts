@@ -38,8 +38,6 @@ export interface ISellerFish {
   categories: string;
   subCategories: string[];
   tags: string[];
-  pond: string[];
-  production: string[];
   ratingsCount?: number;
   ratingSum?: number;
   ratingCategories?: IRatingCategories;
