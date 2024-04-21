@@ -45,6 +45,7 @@ export interface ISellerDocument extends Record<string, SellerType> {
   profilePicture?: string;
   description: string;
   address: string;
+  phoneNumber: string;
   ratingsCount?: number;
   ratingSum?: number;
   ratingCategories?: IRatingCategories;
