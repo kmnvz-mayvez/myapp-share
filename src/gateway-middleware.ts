@@ -6,7 +6,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const tokens: string[] = ['auth', 'seller', 'fish', 'search', 'buyer', 'message', 'order', 'review'];
-const JWT_SECRET = process.env.JWT_SECRET as string;
+const JWT_SECRET = process.env.JWT_TOKEN as string;
 
 export function verifyGatewayRequest(req: Request, _res: Response, next: NextFunction): void {
   if (!req.headers?.gatewaytoken) {
