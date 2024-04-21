@@ -13,7 +13,7 @@ export function uploads(
         public_id,
         overwrite,
         invalidate,
-        resource_type: 'auto' // zip, images
+        resource_type: 'auto'
       },
       (error: UploadApiErrorResponse | undefined, result: UploadApiResponse | undefined) => {
         if (error) resolve(error);

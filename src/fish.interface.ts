@@ -10,7 +10,6 @@ export type FishType =
   | undefined;
 
 export interface ICreateFish extends Record<string, FishType> {
-  // [key: string]: string | string[] | number | undefined;
   sellerId?: string;
   profilePicture?: string;
   title: string;
