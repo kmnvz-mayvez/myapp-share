@@ -48,6 +48,7 @@ export interface ISellerFish {
   basicTitle: string;
   basicDescription: string;
   price: number;
+  stock: number;
   coverImage: string;
   createdAt?: Date | string;
   sortId?: number;
