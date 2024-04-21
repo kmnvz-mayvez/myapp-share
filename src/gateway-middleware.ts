@@ -1,8 +1,12 @@
 import JWT from 'jsonwebtoken';
 import { Request, Response, NextFunction } from 'express';
 import { NotAuthorizedError } from './error-handler';
+import dotenv from 'dotenv';
 
-const tokens: string[] = ['auth', 'seller', 'gig', 'search', 'buyer', 'message', 'order', 'review'];
+dotenv.config();
+
+const tokens: string[] = ['auth', 'seller', 'fish', 'search', 'buyer', 'message', 'order', 'review'];
+const JWT_SECRET = process.env.JWT_SECRET as string;
 
 export function verifyGatewayRequest(req: Request, _res: Response, next: NextFunction): void {
   if (!req.headers?.gatewaytoken) {
@@ -14,7 +18,7 @@ export function verifyGatewayRequest(req: Request, _res: Response, next: NextFun
   }
 
   try {
-    const payload: { id: string; iat: number } = JWT.verify(token, '1282722b942e08c8a6cb033aa6ce850e') as { id: string; iat: number };
+    const payload: { id: string; iat: number } = JWT.verify(token, JWT_SECRET) as { id: string; iat: number };
     if (!tokens.includes(payload.id)) {
       throw new NotAuthorizedError('Invalid request', 'verifyGatewayRequest() method: Request payload is invalid');
     }
