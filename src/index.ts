@@ -89,3 +89,5 @@ export {
   isEmail,
   isDataURL
 } from './helpers';
+export { default as Random } from './random';
+
