@@ -7,19 +7,19 @@ declare global {
 }
 
 export interface IAuthPayload {
+  iat?: number;
   id: number;
   username: string;
   email: string;
-  iat?: number;
 }
 
 export interface IAuth {
+  profilePicture?: string;
   username?: string;
   password?: string;
   email?: string;
   address?: string;
   phoneNumber?: string;
-  profilePicture?: string;
 }
 
 export interface IAuthDocument {
@@ -104,16 +104,16 @@ export interface IAuthResponse {
 
 export interface IAuthUser {
   profilePublicId: string | null;
+  id: number | null;
+  profilePicture: string | null;
+  username: string | null;
   address: string | null;
   phoneNumber: string | null;
-  createdAt: Date | null;
   email: string | null;
   emailVerificationToken: string | null;
   emailVerified: boolean | null;
-  id: number | null;
   passwordResetExpires: Date | null;
   passwordResetToken: null | null;
-  profilePicture: string | null;
+  createdAt: Date | null;
   updatedAt: Date | null;
-  username: string | null;
 }

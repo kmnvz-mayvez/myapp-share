@@ -24,13 +24,13 @@ export interface IPond {
 }
 
 export interface IProduction {
-  [key: string]: string | number | boolean | undefined;
+  [key: string]: string | number | undefined;
   _id?: string;
-  title: string;
+  nameProduction: string;
+  description: string;
   startDate: string;
   endDate: string;
-  totalProduction: string;
-  description: string;
+  totalProduction: number;
 }
 
 export interface ISellerDocument extends Record<string, SellerType> {

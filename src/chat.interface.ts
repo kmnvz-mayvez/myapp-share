@@ -46,9 +46,9 @@ export interface IMessageDetails {
 }
 
 export interface IChatBoxProps {
+  fishId: string;
   seller: IChatSellerProps;
   buyer: IChatBuyerProps
-  fishId: string;
   onClose: () => void;
 }
 
