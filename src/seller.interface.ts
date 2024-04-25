@@ -1,9 +1,6 @@
 import { ObjectId } from "mongoose";
 import { IRatingCategories } from "./review.interface";
 
-// By extending with the Record<string, any> 
-// string keys with any values along with those defined in the interface.
-
 export type SellerType =
   | string
   | string[]
