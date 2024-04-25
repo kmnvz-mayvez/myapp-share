@@ -13,15 +13,15 @@ export interface ICreateFish extends Record<string, FishType> {
   sellerId?: string;
   profilePicture?: string;
   title: string;
-  categories: string;
   description: string;
+  categories: string;
   tags: string[];
   price: number;
   stock: number;
   coverImage: string;
   expectedDelivery: string;
-  basicTitle: string;
-  basicDescription: string;
+  nameFish: string;
+  descriptionFish: string;
 }
 
 export interface ISellerFish {
@@ -40,8 +40,8 @@ export interface ISellerFish {
   ratingSum?: number;
   ratingCategories?: IRatingCategories;
   expectedDelivery: string;
-  basicTitle: string;
-  basicDescription: string;
+  nameFish: string;
+  descriptionFish: string;
   price: number;
   stock: number;
   coverImage: string;
@@ -87,7 +87,6 @@ export interface IFishInfo {
 export interface IFishTopProps {
   fishs: ISellerFish[];
   title?: string;
-  subTitle?: string;
   category?: string;
   width: string;
   type: string;
