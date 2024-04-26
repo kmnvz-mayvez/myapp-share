@@ -91,8 +91,12 @@ export {
 } from './helpers';
 export { default as Random } from './random';
 export {
-  coverImage,
-  fishCategories,
-  tags
+  seedImage,
+  seedTags,
+  shopDescriptionSeed,
+  fullNamesSeed,
+  seedFirstNames,
+  seedServices,
+  seedFishCategories
 } from './seed';
 
