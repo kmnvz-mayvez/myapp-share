@@ -58,10 +58,10 @@ function generateRandomDescription(): string {
     return `${shopKeyword} ikan air tawar ${fishType}, menyediakan layanan ${service}.`;
 }
 
-const descriptions = [];
+const descriptionShopSeed = [];
 for (let i = 0; i < 5; i++) {
-    descriptions.push(generateRandomDescription());
+    descriptionShopSeed.push(generateRandomDescription());
 }
 
-export const shopDescriptionSeed: string[] = descriptions;
-export const fullNamesSeed: string[] = fullNames;
+export const shopDescriptionSeed = descriptionShopSeed;
+export const fullNamesSeed = fullNames;
