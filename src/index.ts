@@ -93,10 +93,6 @@ export { default as Random } from './random';
 export {
   seedImage,
   seedTags,
-  shopDescriptionSeed,
-  fullNamesSeed,
-  seedFirstNames,
-  seedServices,
   seedFishCategories
 } from './seed';
 
