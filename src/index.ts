@@ -90,4 +90,9 @@ export {
   isDataURL
 } from './helpers';
 export { default as Random } from './random';
+export {
+  coverImage,
+  fishCategories,
+  tags
+} from './seed';
 
