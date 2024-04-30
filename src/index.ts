@@ -95,6 +95,10 @@ export {
   seedTags,
   seedFishCategories,
   seedName,
-  seedTambak
+  seedTambak,
+  seedFishDescription,
+  seeddescriptionFish,
+  seedFishTitles,
+  seedNameFish
 } from './seed';
 

@@ -15,6 +15,42 @@ export const seedFishCategories: string[] = [
     'bawal'
 ];
 
+export const seedFishTitles: { [key: string]: string } = {
+    'lele': 'Lele Segar dari Tambak',
+    'patin': 'Patin Budidaya Terbaik',
+    'gurami': 'Gurami Segar Peternakan',
+    'nila': 'Ikan Nila Berkualitas Tinggi',
+    'mas': 'Ikan Mas Segar Peternakan',
+    'bawal': 'Bawal Segar Lautan'
+};
+
+export const seedNameFish: { [key: string]: string } = {
+    'lele': 'ikan lele',
+    'patin': 'ikan patin',
+    'gurami': 'ikan gurami',
+    'nila': 'ikan nila',
+    'mas': ' ikan mas',
+    'bawal': 'ikan bawal'
+};
+
+export const seeddescriptionFish: { [key: string]: string } = {
+    'lele': 'Lele adalah ikan air tawar yang mudah dibudidayakan. Daging lele sangat cocok untuk diolah menjadi sate atau pepes.',
+    'patin': 'Patin adalah ikan air tawar yang memiliki daging putih dan lembut. Ikan ini sering dijadikan bahan utama dalam masakan tradisional.',
+    'gurami': 'Gurami adalah ikan air tawar yang memiliki tekstur daging yang kenyal. Ikan ini sering diolah menjadi berbagai masakan lezat.',
+    'nila': 'Ikan Nila adalah ikan air tawar yang populer di Indonesia. Ikan ini memiliki daging yang lezat dan cocok untuk dikonsumsi.',
+    'mas': 'Ikan Mas adalah ikan air tawar yang memiliki rasa yang lezat. Daging ikan mas cocok untuk digoreng atau dibakar.',
+    'bawal': 'Bawal adalah ikan air laut yang memiliki daging yang tebal dan lezat. Ikan ini sering diolah menjadi pesmol atau pepes.'
+};
+
+export const seedFishDescription: { [key: string]: string } = {
+    'lele': 'Lele segar langsung dari tambak. Dijamin segar dan berkualitas.',
+    'patin': 'Patin segar hasil budidaya terbaik. Siap untuk dikonsumsi.',
+    'gurami': 'Gurami segar dari peternakan ikan. Cocok untuk berbagai jenis masakan.',
+    'nila': 'Ikan Nila segar dengan kualitas terbaik. Dapatkan sekarang juga.',
+    'mas': 'Ikan Mas segar langsung dari peternakan. Lezat dan bergizi.',
+    'bawal': 'Bawal segar langsung dari perairan laut. Cocok untuk hidangan istimewa.'
+};
+
 export const seedTags: string[] = [
     'benih',
     'konsumsi'
@@ -88,13 +124,10 @@ export const seedTambak: string[] = [
     'Tambak Indah',
     'Tambak Damai',
     'Tambak Bahagia',
-    'Tambak sejahtera',
     'Tambak Lestari',
     'Tambak Sentosa',
     'Tambak Harapan',
     'Tambak Manunggal',
     'Tambak Mekar',
-    'Tambak sejahtera',
-    'Tambak sejahtera',
     'Tambak sejahtera',
 ];
