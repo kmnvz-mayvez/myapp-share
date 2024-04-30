@@ -30,23 +30,23 @@ export const seedFishTitles: string[] = [
     'Ikan Segar Peternakan',
     'Ikan Berkualitas Tinggi',
     'Ikan Segar Peternakan',
-    'Ikan Segar'
+    'Ikan Segar Harga Terbaik'
 ];
 
 export const seeddescriptionFish: string[] = [
-    'ikan air tawar yang mudah dibudidayakan. Daging lele sangat cocok untuk diolah menjadi sate atau pepes.',
+    'ikan air tawar yang mudah dibudidayakan. Dagingnya sangat cocok untuk diolah menjadi sate atau pepes.',
     'ikan air tawar yang memiliki daging putih dan lembut. Ikan ini sering dijadikan bahan utama dalam masakan tradisional.',
     'ikan air tawar yang memiliki tekstur daging yang kenyal. Ikan ini sering diolah menjadi berbagai masakan lezat.',
     'ikan air tawar yang populer di Indonesia. Ikan ini memiliki daging yang lezat dan cocok untuk dikonsumsi.',
-    'ikan air tawar yang memiliki rasa yang lezat. Daging ikan mas cocok untuk digoreng atau dibakar.',
-    'ikan air laut yang memiliki daging yang tebal dan lezat. Ikan ini sering diolah menjadi pesmol atau pepes.'
+    'ikan air tawar yang memiliki rasa yang lezat. Dagingnya cocok untuk digoreng atau dibakar.',
+    'ikan air tawar yang memiliki daging yang tebal dan lezat. Ikan ini sering diolah menjadi pesmol atau pepes.'
 ];
 
 export const seedFishDescription: string[] = [
     'ikan hasil langsung dari tambak. Dijamin segar dan berkualitas.',
     'ikan hasil budidaya terbaik. Siap untuk dikonsumsi.',
     'ikan hasil dari peternakan ikan. Cocok untuk berbagai jenis masakan.',
-    'ikan dengan hasil kualitas terbaik. Dapatkan sekarang juga.',
+    'ikan hasil kualitas terbaik. Dapatkan sekarang juga.',
     'ikan hasil langsung dari peternakan. Lezat dan bergizi.',
     'ikan hasil langsung dari perairan air tawar. Cocok untuk hidangan istimewa.'
 ];
