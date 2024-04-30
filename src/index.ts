@@ -93,6 +93,8 @@ export { default as Random } from './random';
 export {
   seedImage,
   seedTags,
-  seedFishCategories
+  seedFishCategories,
+  seedName,
+  seedTambak
 } from './seed';
 
