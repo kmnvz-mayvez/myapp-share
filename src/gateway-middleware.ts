@@ -2,7 +2,7 @@ import JWT from 'jsonwebtoken';
 import { Request, Response, NextFunction } from 'express';
 import { NotAuthorizedError } from './error-handler';
 
-const tokens: string[] = ['auth', 'seller', 'fish', 'search', 'buyer', 'message', 'order', 'review'];
+const tokens: string[] = ['auth', 'seller', 'fish', 'search', 'buyer', 'message', 'order', 'review', 'user'];
 
 export function verifyGatewayRequest(req: Request, _res: Response, next: NextFunction): void {
   if (!req.headers?.gatewaytoken) {
