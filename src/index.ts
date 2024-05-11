@@ -99,6 +99,7 @@ export {
   seedFishDescription,
   seeddescriptionFish,
   seedFishTitles,
-  seedNameFish
+  seedNameFish,
+  seedPlate
 } from './seed';
 

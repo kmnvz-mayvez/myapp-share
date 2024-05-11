@@ -132,7 +132,7 @@ export const seedTambak: string[] = [
     'Tambak sejahtera',
 ];
 
-export const seedPlat = [
+export const seedPlate = [
     'B3O23KEZ',
     'B3A4R5U2',
     'B8C2X4V5',
