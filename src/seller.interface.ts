@@ -19,7 +19,7 @@ export interface IPond {
   _id?: string;
   namePond: string;
   typePond: string;
-  sizePond: string;
+  sizePond: number;
   location: string;
 }
 
