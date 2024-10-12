@@ -54,6 +54,7 @@ export interface ISellerDocument extends Record<string, SellerType> {
   completed?: number;
   cancelled?: number;
   totalEarnings?: number;
+  totalFishs?: number;
   paypal?: string;
   createdAt?: Date | string;
 }
