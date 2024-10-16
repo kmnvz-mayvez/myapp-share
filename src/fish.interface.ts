@@ -15,6 +15,7 @@ export interface ICreateFish extends Record<string, FishType> {
   title: string;
   description: string;
   categories: string;
+  subCategories: string[];
   tags: string[];
   price: number;
   stock: number;
@@ -35,6 +36,7 @@ export interface ISellerFish {
   description: string;
   active?: boolean;
   categories: string;
+  subCategories: string[];
   tags: string[];
   ratingsCount?: number;
   ratingSum?: number;
