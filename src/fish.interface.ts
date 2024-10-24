@@ -93,3 +93,33 @@ export interface IFishTopProps {
   width: string;
   type: string;
 }
+
+// Additional Request
+
+export interface IFishBulkRequest {
+  requestId?: string | ObjectId;     // ID permintaan yang dihasilkan secara otomatis
+  buyerId: string | ObjectId;        // ID pembeli yang mengajukan permintaan
+  fishType: string;                  // Jenis ikan yang diminta (misalnya, "Salmon", "Lele", dll.)
+  quantityInTons: number;            // Jumlah ikan yang diminta dalam satuan ton
+  maxPricePerTon?: number;           // Harga maksimal per ton yang diinginkan pembeli
+  preferredDeliveryDate?: string;    // Tanggal pengiriman yang diharapkan
+  description?: string;              // Deskripsi tambahan atau permintaan khusus
+  status?: string;                   // Status dari permintaan
+  fulfilledBy?: FulfillmentDetail[]; // Daftar penjual yang memenuhi permintaan
+  createdAt?: Date | string;         // Tanggal saat permintaan dibuat
+  updatedAt?: Date | string;         // Tanggal saat permintaan terakhir diperbarui
+}
+
+export interface FulfillmentDetail {
+  sellerId: string | ObjectId;    // ID penjual yang memenuhi sebagian atau seluruh permintaan
+  quantityFulfilled: number;      // Jumlah ikan yang dipenuhi oleh penjual (dalam ton)
+  pricePerTon: number;            // Harga per ton yang disepakati dengan penjual
+  deliveryDate: string;           // Tanggal pengiriman yang disepakati
+}
+
+export interface IFishBulkRequestContext {
+  request: IFishBulkRequest;      // Data permintaan ikan secara bulk
+  sellers: ISellerDocument[];     // Data penjual yang terlibat
+  isSuccess?: boolean;            // Status keberhasilan proses
+  isLoading?: boolean;            // Status pemrosesan
+}
