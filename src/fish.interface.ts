@@ -97,29 +97,29 @@ export interface IFishTopProps {
 // Additional Request
 
 export interface IFishBulkRequest {
-  requestId?: string | ObjectId;     // ID permintaan yang dihasilkan secara otomatis
-  buyerId: string | ObjectId;        // ID pembeli yang mengajukan permintaan
-  fishType: string;                  // Jenis ikan yang diminta (misalnya, "Salmon", "Lele", dll.)
-  quantityInTons: number;            // Jumlah ikan yang diminta dalam satuan ton
-  maxPricePerTon?: number;           // Harga maksimal per ton yang diinginkan pembeli
-  preferredDeliveryDate?: string;    // Tanggal pengiriman yang diharapkan
-  description?: string;              // Deskripsi tambahan atau permintaan khusus
-  status?: string;                   // Status dari permintaan
-  fulfilledBy?: FulfillmentDetail[]; // Daftar penjual yang memenuhi permintaan
-  createdAt?: Date | string;         // Tanggal saat permintaan dibuat
-  updatedAt?: Date | string;         // Tanggal saat permintaan terakhir diperbarui
+  requestId?: string | ObjectId;     
+  buyerId: string | ObjectId;        
+  categories: string;                  
+  quantity: number;            
+  price?: number;           
+  preferredDeliveryDate?: string;    
+  description?: string;              
+  status?: string;                   // Status from request
+  fulfilledBy?: FulfillmentDetail[]; 
+  createdAt?: Date | string;        
+  updatedAt?: Date | string;        
 }
 
 export interface FulfillmentDetail {
-  sellerId: string | ObjectId;    // ID penjual yang memenuhi sebagian atau seluruh permintaan
-  quantityFulfilled: number;      // Jumlah ikan yang dipenuhi oleh penjual (dalam ton)
-  pricePerTon: number;            // Harga per ton yang disepakati dengan penjual
-  deliveryDate: string;           // Tanggal pengiriman yang disepakati
+  sellerId: string | ObjectId;    
+  quantityFulfilled: number;      
+  pricePerTon: number;            
+  deliveryDate: string;           
 }
 
 export interface IFishBulkRequestContext {
-  request: IFishBulkRequest;      // Data permintaan ikan secara bulk
-  sellers: ISellerDocument[];     // Data penjual yang terlibat
-  isSuccess?: boolean;            // Status keberhasilan proses
-  isLoading?: boolean;            // Status pemrosesan
+  request: IFishBulkRequest;      
+  sellers: ISellerDocument[];     
+  isSuccess?: boolean;            
+  isLoading?: boolean;            
 }
